@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Logo";
 import "./styles.css";
 import keenLogo from "../../keen_logo.png";
@@ -12,11 +13,11 @@ class Navbar extends Component {
         </div>
         <div className="navbar-items">
           <ul>
-            <li><a href="#">ALL</a></li>
-            <li><a href="#">MUSIC</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li><Link to="#">ALL</Link></li>
+            <li><Link to="#">MUSIC</Link></li>
+            <li><Link to="#">SHOP</Link></li>
             {/* <li><a href="#">EVENTS</a></li> */}
-            <li><a href="#">CONTACT</a></li>
+            <li><Link to="#">CONTACT</Link></li>
           </ul>
         </div>
       </div>
