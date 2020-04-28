@@ -11,11 +11,13 @@ class Navbar extends Component {
           <Logo picture={keenLogo} />
         </div>
         <div className="navbar-items">
-          <li>NEW</li>
-          <li>MUSIC</li>
-          <li>SHOP</li>
-          <li>EVENTS</li>
-          <li>CONTACT</li>
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">SHOP</a></li>
+            {/* <li><a href="#">EVENTS</a></li> */}
+            <li><a href="#">CONTACT</a></li>
+          </ul>
         </div>
       </div>
     );
