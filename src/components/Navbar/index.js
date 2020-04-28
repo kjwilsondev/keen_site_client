@@ -13,11 +13,19 @@ class Navbar extends Component {
         </div>
         <div className="navbar-items">
           <ul>
-            <li><Link to="#">ALL</Link></li>
-            <li><Link to="#">MUSIC</Link></li>
-            <li><Link to="#">SHOP</Link></li>
+            <li>
+              <Link to="#">ALL</Link>
+            </li>
+            <li>
+              <Link to="#">MUSIC</Link>
+            </li>
+            <li>
+              <Link to="#">SHOP</Link>
+            </li>
             {/* <li><a href="#">EVENTS</a></li> */}
-            <li><Link to="#">CONTACT</Link></li>
+            <li>
+              <Link to="#">CONTACT</Link>
+            </li>
           </ul>
         </div>
       </div>

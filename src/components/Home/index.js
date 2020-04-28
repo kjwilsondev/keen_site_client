@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Logo from "../Logo";
 import "./styles.css";
-import keenLogo from "../../keen_logo.png";
+import girlSing from "../../girl_sing.jpg";
 import Carousel from "./components/Carousel";
+import Post from "../../components/Post";
 
 class Home extends Component {
   render() {
@@ -11,6 +12,7 @@ class Home extends Component {
       <div className="home">
         {/* <Logo picture={keenLogo} /> */}
         <Carousel />
+        <Post title="FIRST POST" picture={girlSing} />
       </div>
     );
   }
