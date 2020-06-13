@@ -6,7 +6,7 @@ class Logo extends Component {
     console.log("instantiated Logo render");
     const { picture } = this.props;
 
-    return <img src={picture} className="logo" />;
+    return <img src={picture} alt="logo" className="logo" />;
   }
 }
 

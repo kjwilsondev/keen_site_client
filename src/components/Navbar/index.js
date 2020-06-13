@@ -1,33 +1,42 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Logo from "../Logo";
+import React from "react";
 import "./styles.css";
+import Logo from "../Logo";
 import keenLogo from "../../keen_logo.png";
+import MobileNavbar from "./components/MobileNavbar";
+import WebNavbar from "./components/WebNavbar";
 
-class Navbar extends Component {
+class Navbar extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      width: 0,
+      height: 0,
+      mobileMenuIsOpen: false,
+    };
+
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   render() {
     return (
-      <div className="navbar">
+      <div>
         <div className="navbar-logo">
           <Logo picture={keenLogo} />
         </div>
-        <div className="navbar-items">
-          <ul>
-            <li>
-              <Link to="#">CONTENT</Link>
-            </li>
-            <li>
-              <Link to="#">EVENTS</Link>
-            </li>
-            {/* <li><a href="#">EVENTS</a></li> */}
-            <li>
-              <Link to="#">SHOP</Link>
-            </li>
-            <li>
-              <Link to="#">ABOUT</Link>
-            </li>
-          </ul>
-        </div>
+        {this.state.width < 950 ? <MobileNavbar /> : <WebNavbar />}
       </div>
     );
   }
