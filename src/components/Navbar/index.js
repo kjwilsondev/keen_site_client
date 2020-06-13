@@ -36,7 +36,7 @@ class Navbar extends React.Component {
         <div className="navbar-logo">
           <Logo picture={keenLogo} />
         </div>
-        {this.state.width < 950 ? <MobileNavbar /> : <WebNavbar />}
+        {this.state.width < 450 ? <MobileNavbar /> : <WebNavbar />}
       </div>
     );
   }
