@@ -3,8 +3,8 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 40px;
+  top: 40px;
 }
 
 /* Color/shape of burger icon bars */
@@ -41,7 +41,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: var(--color-black);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -75,6 +75,9 @@
   text-decoration: none;
   list-style-type: none;
   color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
 }
 
 .menu-item:link,
@@ -89,6 +92,10 @@
 
 .menu-item:hover,
 .menu-item:active {
-  background-color: pink;
-  color: #373a47;
+  background-color: var(--color-red);
+  /* color: #373a47; */
+}
+
+.menu-item:focus {
+  outline: 0;
 }

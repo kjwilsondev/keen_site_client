@@ -4,6 +4,8 @@ import "./styles.css";
 import girlSing from "../../girl_sing.jpg";
 import Carousel from "./components/Carousel";
 import Post from "../../components/Post";
+import Popup from "../../components/Popup";
+
 import {
   faInstagram,
   faFacebook,
@@ -39,6 +41,10 @@ class Home extends Component {
           >
             <FontAwesomeIcon className="icon" icon={faSpotify} size="2x" />
           </a>
+        </div>
+        <div className="subscribe">
+          {/* TODO: add callback function to subscribe email */}
+          <Popup callback={(email) => console.log(email)} />
         </div>
       </div>
     );
