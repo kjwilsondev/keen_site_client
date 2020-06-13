@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #efefef;
 }
 .navbar-logo {
-  width: 40vw;
-  min-width: 200px;
   margin: 0px;
   margin-top: 15px;
+}
+
+.navbar-logo img {
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .navbar-items ul {
@@ -46,7 +50,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #000;
+  background: #c92e29;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

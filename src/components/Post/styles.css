@@ -1,7 +1,6 @@
 .post {
   font-family: Arial;
   padding-bottom: 10%;
-  /* width: 66vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,10 +9,14 @@
 
 .post-top {
   list-style-type: none;
+  width: 33vw;
+  min-width: 150px;
+  max-width: 390px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
 }
 
@@ -27,7 +30,7 @@
 }
 
 .post-pic {
-  width: 66vw;
+  width: 100%;
 }
 
 .post-title {

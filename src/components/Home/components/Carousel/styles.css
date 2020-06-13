@@ -10,39 +10,38 @@ body {
 
 .carousel {
   background: #eee;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background: #8c8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  margin-right: 20px;
+  overflow: hidden;
 }
 
-/* cell number */
-.carousel-cell:before {
+.carousel-cell img {
   display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  height: 200px;
+  overflow: hidden;
 }
 
-.carousel-cell.is-selected {
-  background: #ed2;
-  height: 300px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  transition: height 0.6s ease-in;
-  transition: margin-top 0.4s ease-in;
-  transition: margin-bottom 0.4s ease-in;
+.flickity-button {
+  display: none;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 2vw;
+  padding: 10px;
 }
 
-.carousel img {
-  object-fit: none;
+.icon {
+  color: #242121;
+  margin: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+  }
 }
