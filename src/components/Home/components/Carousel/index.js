@@ -2,10 +2,6 @@ import React from "react";
 import Flickity from "flickity-imagesloaded";
 
 import "./styles.css";
-import houseParty from "../../../../houseparty.jpg";
-import girlSings from "../../../../girl_sing.jpg";
-import missuricrop from "../../../../missuricrop.jpg";
-import rap from "../../../../rap.jpg";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -73,16 +69,28 @@ class Carousel extends React.Component {
     return (
       <div className="carousel">
         <div className="carousel-cell">
-          <img src={houseParty} alt="houseParty" />
+          <img
+            src="https://keen-site.s3.us-east-2.amazonaws.com/houseparty.jpg"
+            alt="houseParty"
+          />
         </div>
         <div className="carousel-cell">
-          <img src={girlSings} alt="girlSings" />
+          <img
+            src="https://keen-site.s3.us-east-2.amazonaws.com/girl_sing.jpg"
+            alt="girlSings"
+          />
         </div>
         <div className="carousel-cell">
-          <img src={missuricrop} alt="missuri" />
+          <img
+            src="https://keen-site.s3.us-east-2.amazonaws.com/missuricrop.jpg"
+            alt="missuri"
+          />
         </div>
         <div className="carousel-cell">
-          <img src={rap} alt="rap" />
+          <img
+            src="https://keen-site.s3.us-east-2.amazonaws.com/rap.jpg"
+            alt="rap"
+          />
         </div>
       </div>
     );
