@@ -1,7 +1,7 @@
 .container {
-    margin: 10px 0 ;
+  margin: 10px 0;
 }
 
 .container * {
-    letter-spacing: 0.15em !important;
+  letter-spacing: 0.15em !important;
 }

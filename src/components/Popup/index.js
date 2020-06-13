@@ -32,7 +32,12 @@ const Popup = ({ callback }) => {
 
   return (
     <div className="container">
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+      <Button
+        variant="outlined"
+        color="default"
+        size="large"
+        onClick={handleClickOpen}
+      >
         SUBSCRIBE
       </Button>
       <Dialog
