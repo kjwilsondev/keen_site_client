@@ -41,7 +41,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #242121;
+  background: var(--color-black);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -92,7 +92,7 @@
 
 .menu-item:hover,
 .menu-item:active {
-  background-color: #c92e29;
+  background-color: var(--color-red);
   /* color: #373a47; */
 }
 

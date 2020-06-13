@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Team from "./components/Team";
 
 import "./App.css";
+import "./colors.css";
 
 const THEME = createMuiTheme({
   typography: {

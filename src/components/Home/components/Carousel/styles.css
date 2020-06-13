@@ -36,7 +36,7 @@ body {
 }
 
 .icon {
-  color: #242121;
+  color: var(--color-black);
   margin: 30px;
 }
 
