@@ -11,7 +11,8 @@ import Box from "@material-ui/core/Box";
 import * as EmailValidator from "email-validator";
 // https://material-ui.com/components/dialogs/#FormDialog.js
 const Popup = ({ callback }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  // TODO: set timeout to call setOpen after a few seconds
   const [error, setError] = useState(null);
   const [email, setEmail] = useState(null);
 

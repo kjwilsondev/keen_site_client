@@ -1,11 +1,4 @@
 .navbar-logo {
   margin: 0px;
   margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-logo img {
-  min-width: 200px;
-  max-width: 300px;
 }
